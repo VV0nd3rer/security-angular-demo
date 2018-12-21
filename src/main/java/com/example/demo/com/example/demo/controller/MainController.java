@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @Controller
 public class MainController {
-    @RequestMapping(value = "/**/{[path:[^\\.]*}")
+    @RequestMapping(value = "/posts")
     public String index() {
         return "forward:/";
     }
